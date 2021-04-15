@@ -17,8 +17,8 @@
         });
     }
     function generateEmail(value) {
-        const target = $('#box');
-        target.append('<ul><li>' + value + '</li></ul>');
+        const box = $('#box');
+        box.append('<ul><li>' + value + '</li></ul>');
     }
 
 
