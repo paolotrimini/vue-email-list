@@ -1,8 +1,6 @@
 // Attraverso l'apposita API di Boolean generare 10 indirizzi email
 // e stamparli in pagina all'interno di una lista.
 
-
-
     function emailGenerator() {
         $.ajax({
             url: 'https://flynn.boolean.careers/exercises/api/random/mail',
@@ -17,16 +15,21 @@
         });
     }
 
+
     function generateEmail(value) {
-        for(let i=0; i<10; i++){
             const box = $('#box');
             box.append('<ul><li>' + value + '</li></ul>');
+    }
+
+    // elenco mail RND
+    function emailList(){
+        for(let i=0; i<10; i++){
+            emailGenerator();
         }
     }
 
-
     function init() {
-        emailGenerator();
+     emailList();
 
     }
     document.addEventListener('DOMContentLoaded', init);
