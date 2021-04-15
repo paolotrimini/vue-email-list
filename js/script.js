@@ -16,9 +16,12 @@
             }
         });
     }
+
     function generateEmail(value) {
-        const box = $('#box');
-        box.append('<ul><li>' + value + '</li></ul>');
+        for(let i=0; i<10; i++){
+            const box = $('#box');
+            box.append('<ul><li>' + value + '</li></ul>');
+        }
     }
 
 
